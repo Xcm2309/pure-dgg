@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+   
+    "name": "DGG with no emotes",
+    "version": "0.1.0",
+    "description": "Removes emotes from dgg",
+   
+    "content_scripts": [{
+      "all_frames": true,
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "matches": ["*://www.destiny.gg/embed/chat/*", "https://www.destiny.gg/bigscreen", "*://www.destiny.gg/embed/chat?follow=%2Fbigscreen"]
+    }]
+   
+  }
